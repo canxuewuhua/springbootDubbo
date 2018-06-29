@@ -22,3 +22,6 @@ spring.dubbo.scan=com.king
 提供者写接口和接口的实现类；
 消费者也要写同路径下的相同名的接口，不必写实现类。
 提供者的接口需引入@Service（alibaba的包）；消费者的接口需引入@Reference(加版本号)。
+
+如果从github上下载下来，出现类变成了橙色，启动类不能启动，原因可能是项目没有添加maven管理
+选中pom.xml文件，右键Add to Maven,添加maven管理

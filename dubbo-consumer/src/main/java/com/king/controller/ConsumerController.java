@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by ZHUYONGQIANG on 2018/6/29.
+ * Created by ZHUYONGQIANG on 20190922
  */
 @RestController
 @RequestMapping("/project")
 public class ConsumerController {
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0.0",timeout = 3000)
     public ProviderService consumerService;
     @RequestMapping("/say")
     public String sayHello(String name){

@@ -21,6 +21,8 @@ dubbo依赖于zookeeper，所以在linux上虚拟机上先安装上zookeeper，�
 在消费者的服务中，通过使用@Reference注解引入消费者的Service，就可以用。
 此处要注意了生产者和消费者的这两个注解都必须是alibaba的注解才可以
 
+注意：dubbo相关的注解只需要在服务提供者的服务的pom文件即可
+
 Provider中只需配置application.properties文件，文件内容如下：
 # server.port=8011
 #dubbo服务发布者

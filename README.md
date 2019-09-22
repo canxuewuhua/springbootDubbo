@@ -50,3 +50,7 @@ Consumer中配置application.properties文件，文件内容如下：
 
 # 如果从github上下载下来，出现类变成了橙色，启动类不能启动，原因可能是项目没有添加maven管理
 # 选中pom.xml文件，右键Add to Maven,添加maven管理
+
+
+Dubbo 使用的是 RPC 通信，而 Spring Cloud 使用的是 HTTP RESTFul 方式
+Dubbo 默认使用 Netty 框架
